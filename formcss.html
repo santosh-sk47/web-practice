@@ -2,17 +2,18 @@
 <html>
   <head>
     <style>
-          {box-sizing: border-box;
-          }
+      /* {
+        box-sizing: border-box;
+      } */
 
-          input[type=text]:hover, select:hover, textarea:hover {
-            width: 90%;
-            padding: 20px;
-            border: 1px bold;
-            border radius: 40px;
-            resize: vertical;
-            background-color: white;
-          }
+      input[type=text]:hover, select:hover, textarea:hover {
+        width: 90%;
+        padding: 20px;
+        border: 1px bold;
+        border-radius: 40px;
+        resize: vertical;
+        background-color: white;
+      }
       label {
         padding: 12px 12px 12px 0;
         display: inline-block;
@@ -22,7 +23,7 @@
         padding: 12px 20px;
         border: none;
         border-radius: 4 px;
-        crusor: pointer;
+        cursor: pointer;
         float: right;
       }
       input[type=submit]:hover {
@@ -30,7 +31,7 @@
       }
 
       .container{
-        border radius: 40px;
+        border-radius: 40px;
         background-color: lightblue;
         padding: 20px;
         border: 2px bold;
@@ -53,7 +54,6 @@
         display: table;
         clear: both;
       }
-      }
     </style>
   </head>
   <body>
@@ -73,170 +73,158 @@
             </select>
           </div>
         </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="fname">First Name*:</label>
-            </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Required*"
-              />
-            </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name*:</label>
           </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label for="lname">Last Name*:</label>
-            </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Required*"
-              />
-            </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Required*"
+            />
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="fnum">Phone Number*:</label>
-            </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="fnum"
-                name="Phonenumber"
-                placeholder="Required*"
-              />
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name*:</label>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="email">Email*:</label>
-            </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="optional"
-              />
-            </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Required*"
+            />
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="street">Street Address 1*:</label>
-            </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="streetaddress1"
-                name="streetaddress1"
-                placeholder="Required*"
-              />
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="fnum">Phone Number*:</label>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="street2">Street Address 2*:</label>
-            </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="streetaddress2"
-                name="streetaddress2"
-                placeholder="Optional*"
-              />
-            </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fnum"
+              name="Phonenumber"
+              placeholder="Required*"
+            />
           </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label for="City">City *:</label>
-            </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="City"
-                name="City"
-                placeholder="Required*"
-              />
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email*:</label>
           </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label for="State">State *:</label>
-            </div>
-            <div class="col-75">
-              <select id="State" name="State" placeholder="Select one">
-                <option value="Massachusetts">Massachusetts</option>
-                <option value="New York">New York</option>
-                <option value="California">California</option>
-                <option value="Texas">Texas</option>
-                <option value="Maine">Maine</option>
-                <option value="Vermont">Vermont</option>
-                <option value="Ohio">Ohia</option>
-                <option value="Connecticut">Connecticut</option>
-              </select>
-            </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="optional"
+            />
           </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label for="Zip Code">Zip Code *:</label>
-            </div>
-            <div class="col-75">
-              <input
-                type="text"
-                id="Zip Code"
-                name="Zip Code"
-                placeholder="Required*"
-              />
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="street">Street Address 1*:</label>
           </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label for="Topic">Topic *:</label>
-            </div>
-            <div class="col-75">
-              <select id="Topic" name="Topic" placeholder="Select one">
-                <option value="Agriculture">Agriculture</option>
-                <option value="Abortion">Abortion</option>
-                <option value="Farm">Farm</option>
-                <option value="Student Loan">Student Loan</option>
-                <option value="Housing">Housing</option>
-                <option value="Census">Census</option>
-                <option value="Defense">Defense</option>
-                <option value="Millitry">Millitry</option>
-              </select>
-            </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="streetaddress1"
+              name="streetaddress1"
+              placeholder="Required*"
+            />
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for ="Message">Message:</label>
-            </div>
-            <div class="col-75">
-              
-              <textarea id="Message" name="Message" placeholder="Your Message" style="height:200px"
-              
-              >
-              </textarea>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="street2">Street Address 2*:</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="streetaddress2"
+              name="streetaddress2"
+              placeholder="Optional*"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="City">City *:</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="City"
+              name="City"
+              placeholder="Required*"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="State">State *:</label>
+          </div>
+          <div class="col-75">
+            <select id="State" name="State" placeholder="Select one">
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="New York">New York</option>
+              <option value="California">California</option>
+              <option value="Texas">Texas</option>
+              <option value="Maine">Maine</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Ohio">Ohia</option>
+              <option value="Connecticut">Connecticut</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="Zip Code">Zip Code *:</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="Zip Code"
+              name="Zip Code"
+              placeholder="Required*"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="Topic">Topic *:</label>
+          </div>
+          <div class="col-75">
+            <select id="Topic" name="Topic" placeholder="Select one">
+              <option value="Agriculture">Agriculture</option>
+              <option value="Abortion">Abortion</option>
+              <option value="Farm">Farm</option>
+              <option value="Student Loan">Student Loan</option>
+              <option value="Housing">Housing</option>
+              <option value="Census">Census</option>
+              <option value="Defense">Defense</option>
+              <option value="Millitry">Millitry</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for ="Message">Message:</label>
+          </div>
+          <div class="col-75">
+            <textarea id="Message" name="Message" placeholder="Your Message" style="height:200px">
+            </textarea>
+          </div>
         </div>
         <br>
         <div class="row">
           <input type="submit" value="Send">
         </div>
-      </div>
-
         <br>
-       
-        </div>
       </form>
     </div>
   </body>
